@@ -1,7 +1,8 @@
 import { basePage } from "./basePage";
 import {By} from 'selenium-webdriver'
 
-export class Blaze extends basePage {
+
+export class pageObjects extends basePage {
     phoneBtn: By = By.xpath('//*[@id="itemc"]')
     monitorsBtn: By = By.xpath('//*[@id="itemc"]')
     laptopsBtn: By = By.xpath('//*[@id="itemc"]')
