@@ -1,10 +1,10 @@
 import { Blaze } from "./basePage";
 
-const Blaze =  new Blaze();
+const Blaze =  new objectsPage ();
 
 test("phones link test", async () => {
   await Blaze.navigate();
-  await Blaze.click(Blaze.phonesBtn);
+  await Blaze.click(Blaze.phoneBtn);
   let value = await Blaze.driver.getCurrentUrl();
   expect(value).toBe(Blaze.url);
 });
